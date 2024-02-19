@@ -1,0 +1,227 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+The \mbox{\hyperlink{class_board}{Board}} class.  
+
+
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}} 
+{\bfseries Board} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board}{Board}}. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a407d50b7292b1d8202d9c89d030c0be2}{move}} (const \mbox{\hyperlink{class_position}{Position}} \&from, const \mbox{\hyperlink{class_position}{Position}} \&to, const int \&current\+Player)
+\begin{DoxyCompactList}\small\item\em move the entity \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ \mbox{\hyperlink{class_board_a6eaea6fdedb076ba47c41cb6a8512dc2}{get\+P1l}} () const
+\begin{DoxyCompactList}\small\item\em get\+P1l get hte vector of entity for the player 1. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ \mbox{\hyperlink{class_board_a69f02479aefefbcb84cc83803a4dc9db}{get\+P2l}} () const
+\begin{DoxyCompactList}\small\item\em get\+P2l get hte vector of entity for the player 2. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_case}{Case}} \mbox{\hyperlink{class_board_a2b9bb21f89e425cf748b65bafec20284}{get\+Ar\+Cases}} (\mbox{\hyperlink{class_position}{Position}} pos) const
+\begin{DoxyCompactList}\small\item\em get\+Ar\+Cases get a cases of the board in a position. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_case}{Case}} $\ast$ \mbox{\hyperlink{class_board_a7c85f33af41252911bad542d0fe15ddb}{get\+Case}} (const \mbox{\hyperlink{class_position}{Position}} \&pos) const
+\begin{DoxyCompactList}\small\item\em get\+Case get the case at pos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a2e60ce700f8ec3fb239ff19fc49873cf}{destroy}} (const \mbox{\hyperlink{class_position}{Position}} \&pos, const int \&cur)
+\begin{DoxyCompactList}\small\item\em destroy destroy the entity in some position and if is a flag the game is end. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a3b303d3c1657b5a7e99827b1452c101f}{is\+End}} () const
+\begin{DoxyCompactList}\small\item\em is\+End check if is the end of the game \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_ac8b920727b191f22a32a8598bacade37}{empty\+Board}} () const
+\begin{DoxyCompactList}\small\item\em empty\+Board check if the board is empty. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_ad6a3662a95e8eeb017b0f9e4f08dc353}{put}} (\mbox{\hyperlink{class_entity}{Entity}} $\ast$en, const \mbox{\hyperlink{class_position}{Position}} \&pos)
+\begin{DoxyCompactList}\small\item\em put put a entity on the board and check if the position is free. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_board_a671ab24d844dbb2f700e9ca96ca5d0dc}{give\+Entity\+Player}} (const int \&ower, ROLE \&r)
+\begin{DoxyCompactList}\small\item\em give\+Entity\+Player give entity who is in the player vector if there is no entity because already in the game return a nullptr . \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a8d3e439d286f8df91715c8a83ab86c71}{spawn\+End}} (int player) const
+\begin{DoxyCompactList}\small\item\em spawn\+End check if the STATE spawn is end and change the STATE in TURN if true. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_board}{Board}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a2e60ce700f8ec3fb239ff19fc49873cf}\label{class_board_a2e60ce700f8ec3fb239ff19fc49873cf}} 
+\index{Board@{Board}!destroy@{destroy}}
+\index{destroy@{destroy}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Board\+::destroy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{pos,  }\item[{const int \&}]{cur }\end{DoxyParamCaption})}
+
+
+
+destroy destroy the entity in some position and if is a flag the game is end. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a \mbox{\hyperlink{class_position}{Position}} in the board. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_ac8b920727b191f22a32a8598bacade37}\label{class_board_ac8b920727b191f22a32a8598bacade37}} 
+\index{Board@{Board}!emptyBoard@{emptyBoard}}
+\index{emptyBoard@{emptyBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{emptyBoard()}{emptyBoard()}}
+{\footnotesize\ttfamily bool Board\+::empty\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+empty\+Board check if the board is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if the board is empty. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a2b9bb21f89e425cf748b65bafec20284}\label{class_board_a2b9bb21f89e425cf748b65bafec20284}} 
+\index{Board@{Board}!getArCases@{getArCases}}
+\index{getArCases@{getArCases}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getArCases()}{getArCases()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_case}{Case}} Board\+::get\+Ar\+Cases (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+get\+Ar\+Cases get a cases of the board in a position. 
+
+\begin{DoxyReturn}{Returns}
+a case. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a7c85f33af41252911bad542d0fe15ddb}\label{class_board_a7c85f33af41252911bad542d0fe15ddb}} 
+\index{Board@{Board}!getCase@{getCase}}
+\index{getCase@{getCase}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getCase()}{getCase()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_case}{Case}} $\ast$ Board\+::get\+Case (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+get\+Case get the case at pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position to get the case. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the case. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a6eaea6fdedb076ba47c41cb6a8512dc2}\label{class_board_a6eaea6fdedb076ba47c41cb6a8512dc2}} 
+\index{Board@{Board}!getP1l@{getP1l}}
+\index{getP1l@{getP1l}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getP1l()}{getP1l()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ Board\+::get\+P1l (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+P1l get hte vector of entity for the player 1. 
+
+\begin{DoxyReturn}{Returns}
+the vector of entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a69f02479aefefbcb84cc83803a4dc9db}\label{class_board_a69f02479aefefbcb84cc83803a4dc9db}} 
+\index{Board@{Board}!getP2l@{getP2l}}
+\index{getP2l@{getP2l}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getP2l()}{getP2l()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_entity}{Entity}} $>$ Board\+::get\+P2l (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+P2l get hte vector of entity for the player 2. 
+
+\begin{DoxyReturn}{Returns}
+the vector of entity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a671ab24d844dbb2f700e9ca96ca5d0dc}\label{class_board_a671ab24d844dbb2f700e9ca96ca5d0dc}} 
+\index{Board@{Board}!giveEntityPlayer@{giveEntityPlayer}}
+\index{giveEntityPlayer@{giveEntityPlayer}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{giveEntityPlayer()}{giveEntityPlayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}} $\ast$ Board\+::give\+Entity\+Player (\begin{DoxyParamCaption}\item[{const int \&}]{ower,  }\item[{ROLE \&}]{r }\end{DoxyParamCaption})}
+
+
+
+give\+Entity\+Player give entity who is in the player vector if there is no entity because already in the game return a nullptr . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ower} & the player of the entity. \\
+\hline
+{\em r} & a ROLE of the entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a entity who is in the vector of player. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a3b303d3c1657b5a7e99827b1452c101f}\label{class_board_a3b303d3c1657b5a7e99827b1452c101f}} 
+\index{Board@{Board}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily bool Board\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+is\+End check if is the end of the game 
+
+\begin{DoxyReturn}{Returns}
+true if it is the end 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a407d50b7292b1d8202d9c89d030c0be2}\label{class_board_a407d50b7292b1d8202d9c89d030c0be2}} 
+\index{Board@{Board}!move@{move}}
+\index{move@{move}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily char Board\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{from,  }\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{to,  }\item[{const int \&}]{current\+Player }\end{DoxyParamCaption})}
+
+
+
+move the entity 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & the position of the entity \\
+\hline
+{\em to} & the new position of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_ad6a3662a95e8eeb017b0f9e4f08dc353}\label{class_board_ad6a3662a95e8eeb017b0f9e4f08dc353}} 
+\index{Board@{Board}!put@{put}}
+\index{put@{put}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily char Board\+::put (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_entity}{Entity}} $\ast$}]{en,  }\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{pos }\end{DoxyParamCaption})}
+
+
+
+put put a entity on the board and check if the position is free. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em en} & a \mbox{\hyperlink{class_entity}{Entity}} . \\
+\hline
+{\em pos} & a \mbox{\hyperlink{class_position}{Position}} of the board. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if ok, 2 if the case is not available. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a8d3e439d286f8df91715c8a83ab86c71}\label{class_board_a8d3e439d286f8df91715c8a83ab86c71}} 
+\index{Board@{Board}!spawnEnd@{spawnEnd}}
+\index{spawnEnd@{spawnEnd}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{spawnEnd()}{spawnEnd()}}
+{\footnotesize\ttfamily bool Board\+::spawn\+End (\begin{DoxyParamCaption}\item[{int}]{player }\end{DoxyParamCaption}) const}
+
+
+
+spawn\+End check if the STATE spawn is end and change the STATE in TURN if true. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player who check if he finish the spawn STATE. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean , true if finish is spawn end. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/board.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/board.\+cpp\end{DoxyCompactItemize}

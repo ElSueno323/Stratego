@@ -1,0 +1,10 @@
+#ifndef ROLE_H
+#define ROLE_H
+
+/**
+ * \brief The ROLE enum of entities
+ */
+enum ROLE{MARSHAL =10,GENERAL=9,COLONEL=8,MAJOR=7,COMMANDER=6,LIEUTENANT=5,SERGEANT=4,DEMINER=3,SCOUT=2,DRUNKED_SCOUT=22,SPY=1,DRAPEAU=0,BOMBE=11, NONE=-1};
+//add drunked_scout
+
+#endif // ROLE_H

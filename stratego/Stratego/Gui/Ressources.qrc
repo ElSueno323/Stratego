@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/ground">
+        <file alias="grassL">images/board/grass2.png</file>
+        <file alias="grassD">images/board/grass1.png</file>
+        <file alias="lake1">images/board/lake1_1.png</file>
+        <file alias="lake2">images/board/lake1_2.png</file>
+        <file alias="lake3">images/board/lake1_3.png</file>
+        <file alias="lake4">images/board/lake1_4.png</file>
+        <file alias="sea">images/board/sea.png</file>
+    </qresource>
+    <qresource prefix="/pawn">
+        <file alias="B_2">images/pieces/B_2.png</file>
+        <file alias="B_3">images/pieces/B_3.png</file>
+        <file alias="B_4">images/pieces/B_4.png</file>
+        <file alias="B_5">images/pieces/B_5.png</file>
+        <file alias="B_6">images/pieces/B_6.png</file>
+        <file alias="B_7">images/pieces/B_7.png</file>
+        <file alias="B_8">images/pieces/B_8.png</file>
+        <file alias="B_9">images/pieces/B_9.png</file>
+        <file alias="B_10">images/pieces/B_10.png</file>
+        <file alias="B_back">images/pieces/B_back.png</file>
+        <file alias="B_bomb">images/pieces/B_bomb.png</file>
+        <file alias="B_flag">images/pieces/B_flag.png</file>
+        <file alias="B_spy">images/pieces/B_spy.png</file>
+        <file alias="R_2">images/pieces/R_2.png</file>
+        <file alias="R_3">images/pieces/R_3.png</file>
+        <file alias="R_4">images/pieces/R_4.png</file>
+        <file alias="R_5">images/pieces/R_5.png</file>
+        <file alias="R_6">images/pieces/R_6.png</file>
+        <file alias="R_7">images/pieces/R_7.png</file>
+        <file alias="R_8">images/pieces/R_8.png</file>
+        <file alias="R_9">images/pieces/R_9.png</file>
+        <file alias="R_10">images/pieces/R_10.png</file>
+        <file alias="R_back">images/pieces/R_back.png</file>
+        <file alias="R_bomb">images/pieces/R_bomb.png</file>
+        <file alias="R_flag">images/pieces/R_flag.png</file>
+        <file alias="R_spy">images/pieces/R_spy.png</file>
+        <file alias="2">images/pieces/2.png</file>
+        <file alias="3">images/pieces/3.png</file>
+        <file alias="4">images/pieces/4.png</file>
+        <file alias="5">images/pieces/5.png</file>
+        <file alias="6">images/pieces/6.png</file>
+        <file alias="7">images/pieces/7.png</file>
+        <file alias="8">images/pieces/8.png</file>
+        <file alias="9">images/pieces/9.png</file>
+        <file alias="10">images/pieces/10.png</file>
+        <file alias="B">images/pieces/B.png</file>
+        <file alias="F">images/pieces/F.png</file>
+        <file alias="S">images/pieces/S.png</file>
+    </qresource>
+</RCC>

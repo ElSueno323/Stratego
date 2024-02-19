@@ -1,0 +1,41 @@
+\hypertarget{entity_8h_source}{}\doxysection{entity.\+h}
+\label{entity_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/entity.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/entity.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef ENTITY\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define ENTITY\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}ROLE.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{class_entity}{Entity}}\{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{private}:}
+\DoxyCodeLine{14     ROLE role\_;}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} owner\_;}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} distance\_;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{int} attack\_;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{bool} inGame\_;}
+\DoxyCodeLine{19     std::string symbole\_;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} initEntity();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{31     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_entity_a32c42f3a0f41c861ae0fd285a7eb3074}{Entity}}(ROLE role, \textcolor{keywordtype}{int} owner);}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_entity_a8416c806b5088894fd1673bc698a0287}{getAttack}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{42     ROLE \mbox{\hyperlink{class_entity_a7e8e529aa24bbd497ef59eec0485a572}{getRole}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_entity_a3542e5dc64f5cc8b06e378fafcbe41c8}{getOwner}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_entity_a187a041aceefe9827d80979832289c00}{attack}}(\mbox{\hyperlink{class_entity}{Entity}} * o)\textcolor{keyword}{const};}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     std::string \mbox{\hyperlink{class_entity_a6322d794d8fd1e857f5a254c0ca572e0}{getSymbol}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{64     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_entity_a1a0d6e6df8114640527b89b133db2a87}{isInGame}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_entity_aa00bca75499bbbb9bd1809a078883fad}{setInGame}}(\textcolor{keywordtype}{bool} chg);}
+\DoxyCodeLine{75     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_entity_af7ad39830e87ae3bf79b4f4043678781}{operator == }}(\textcolor{keyword}{const} \mbox{\hyperlink{class_entity}{Entity}} \& o);}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ENTITY\_H}}
+
+\end{DoxyCode}

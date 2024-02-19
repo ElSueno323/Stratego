@@ -1,0 +1,177 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+The \mbox{\hyperlink{class_entity}{Entity}} class.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_a32c42f3a0f41c861ae0fd285a7eb3074}{Entity}} (ROLE role, int owner)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_entity}{Entity}} constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a8416c806b5088894fd1673bc698a0287}{get\+Attack}} () const
+\begin{DoxyCompactList}\small\item\em get\+Attack return the attack. \end{DoxyCompactList}\item 
+ROLE \mbox{\hyperlink{class_entity_a7e8e529aa24bbd497ef59eec0485a572}{get\+Role}} () const
+\begin{DoxyCompactList}\small\item\em get\+Role return the role. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a3542e5dc64f5cc8b06e378fafcbe41c8}{get\+Owner}} () const
+\begin{DoxyCompactList}\small\item\em get\+Owner return the owner of the entity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_entity_a187a041aceefe9827d80979832289c00}{attack}} (\mbox{\hyperlink{class_entity}{Entity}} $\ast$o) const
+\begin{DoxyCompactList}\small\item\em attack compare and said who wins the attack. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_entity_a6322d794d8fd1e857f5a254c0ca572e0}{get\+Symbol}} () const
+\begin{DoxyCompactList}\small\item\em get\+Symbol give the symbole of the entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a1a0d6e6df8114640527b89b133db2a87}{is\+In\+Game}} () const
+\begin{DoxyCompactList}\small\item\em is\+In\+Game check if the entity is in the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aa00bca75499bbbb9bd1809a078883fad}{set\+In\+Game}} (bool chg)
+\begin{DoxyCompactList}\small\item\em set\+In\+Game change if the entity is in the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_af7ad39830e87ae3bf79b4f4043678781}{operator==}} (const \mbox{\hyperlink{class_entity}{Entity}} \&o)
+\begin{DoxyCompactList}\small\item\em operator == change the operator fonction and check if two entity are the same. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_entity}{Entity}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_a32c42f3a0f41c861ae0fd285a7eb3074}\label{class_entity_a32c42f3a0f41c861ae0fd285a7eb3074}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{ROLE}]{role,  }\item[{int}]{owner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{class_entity}{Entity}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em role} & the role of the entity. \\
+\hline
+{\em owner} & the owner of this entity. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_a187a041aceefe9827d80979832289c00}\label{class_entity_a187a041aceefe9827d80979832289c00}} 
+\index{Entity@{Entity}!attack@{attack}}
+\index{attack@{attack}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily int Entity\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_entity}{Entity}} $\ast$}]{o }\end{DoxyParamCaption}) const}
+
+
+
+attack compare and said who wins the attack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & a entity. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a8416c806b5088894fd1673bc698a0287}\label{class_entity_a8416c806b5088894fd1673bc698a0287}} 
+\index{Entity@{Entity}!getAttack@{getAttack}}
+\index{getAttack@{getAttack}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getAttack()}{getAttack()}}
+{\footnotesize\ttfamily int Entity\+::get\+Attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Attack return the attack. 
+
+\begin{DoxyReturn}{Returns}
+the attack. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a3542e5dc64f5cc8b06e378fafcbe41c8}\label{class_entity_a3542e5dc64f5cc8b06e378fafcbe41c8}} 
+\index{Entity@{Entity}!getOwner@{getOwner}}
+\index{getOwner@{getOwner}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getOwner()}{getOwner()}}
+{\footnotesize\ttfamily int Entity\+::get\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Owner return the owner of the entity. 
+
+\begin{DoxyReturn}{Returns}
+the owner. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a7e8e529aa24bbd497ef59eec0485a572}\label{class_entity_a7e8e529aa24bbd497ef59eec0485a572}} 
+\index{Entity@{Entity}!getRole@{getRole}}
+\index{getRole@{getRole}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getRole()}{getRole()}}
+{\footnotesize\ttfamily ROLE Entity\+::get\+Role (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Role return the role. 
+
+\begin{DoxyReturn}{Returns}
+return the role. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a6322d794d8fd1e857f5a254c0ca572e0}\label{class_entity_a6322d794d8fd1e857f5a254c0ca572e0}} 
+\index{Entity@{Entity}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily std\+::string Entity\+::get\+Symbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Symbol give the symbole of the entity. 
+
+\begin{DoxyReturn}{Returns}
+a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a1a0d6e6df8114640527b89b133db2a87}\label{class_entity_a1a0d6e6df8114640527b89b133db2a87}} 
+\index{Entity@{Entity}!isInGame@{isInGame}}
+\index{isInGame@{isInGame}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{isInGame()}{isInGame()}}
+{\footnotesize\ttfamily bool Entity\+::is\+In\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+is\+In\+Game check if the entity is in the board. 
+
+\begin{DoxyReturn}{Returns}
+a boolean, true if the entity is in game. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_af7ad39830e87ae3bf79b4f4043678781}\label{class_entity_af7ad39830e87ae3bf79b4f4043678781}} 
+\index{Entity@{Entity}!operator==@{operator==}}
+\index{operator==@{operator==}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Entity\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_entity}{Entity}} \&}]{o }\end{DoxyParamCaption})}
+
+
+
+operator == change the operator fonction and check if two entity are the same. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & a other entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are same. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_aa00bca75499bbbb9bd1809a078883fad}\label{class_entity_aa00bca75499bbbb9bd1809a078883fad}} 
+\index{Entity@{Entity}!setInGame@{setInGame}}
+\index{setInGame@{setInGame}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setInGame()}{setInGame()}}
+{\footnotesize\ttfamily void Entity\+::set\+In\+Game (\begin{DoxyParamCaption}\item[{bool}]{chg }\end{DoxyParamCaption})}
+
+
+
+set\+In\+Game change if the entity is in the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chg} & a boolean,true if the entity is in game. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/entity.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/entity.\+cpp\end{DoxyCompactItemize}

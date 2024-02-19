@@ -1,0 +1,64 @@
+\hypertarget{color_8h_source}{}\doxysection{color.\+h}
+\label{color_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/app/color.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/app/color.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef COLOR\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define COLOR\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// COLOR\_H}}
+\DoxyCodeLine{6 \textcolor{keyword}{inline} std::ostream\& BLUE(std::ostream \&s)}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     HANDLE hStdout = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{9     SetConsoleTextAttribute(hStdout, FOREGROUND\_BLUE}
+\DoxyCodeLine{10               |FOREGROUND\_GREEN|FOREGROUND\_INTENSITY);}
+\DoxyCodeLine{11     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{12 \}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{inline} std::ostream\& RED(std::ostream \&s)}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16     HANDLE hStdout = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{17     SetConsoleTextAttribute(hStdout,}
+\DoxyCodeLine{18                 FOREGROUND\_RED|FOREGROUND\_INTENSITY);}
+\DoxyCodeLine{19     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{20 \}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{inline} std::ostream\& GREEN(std::ostream \&s)}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     HANDLE hStdout = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{25     SetConsoleTextAttribute(hStdout,}
+\DoxyCodeLine{26               FOREGROUND\_GREEN|FOREGROUND\_INTENSITY);}
+\DoxyCodeLine{27     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{28 \}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{inline} std::ostream\& YELLOW(std::ostream \&s)}
+\DoxyCodeLine{31 \{}
+\DoxyCodeLine{32     HANDLE hStdout = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{33     SetConsoleTextAttribute(hStdout,}
+\DoxyCodeLine{34          FOREGROUND\_GREEN|FOREGROUND\_RED|FOREGROUND\_INTENSITY);}
+\DoxyCodeLine{35     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{36 \}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{keyword}{inline} std::ostream\& WHITE(std::ostream \&s)}
+\DoxyCodeLine{39 \{}
+\DoxyCodeLine{40     HANDLE hStdout = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{41     SetConsoleTextAttribute(hStdout,}
+\DoxyCodeLine{42        FOREGROUND\_RED|FOREGROUND\_GREEN|FOREGROUND\_BLUE);}
+\DoxyCodeLine{43     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{44 \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{struct }\mbox{\hyperlink{structcolor}{color}} \{}
+\DoxyCodeLine{47     \mbox{\hyperlink{structcolor}{color}}(WORD attribute):m\_color(attribute)\{\};}
+\DoxyCodeLine{48     WORD m\_color;}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{keyword}{template} <\textcolor{keyword}{class} \_Elem, \textcolor{keyword}{class} \_Traits>}
+\DoxyCodeLine{52 std::basic\_ostream<\_Elem,\_Traits>\&}
+\DoxyCodeLine{53       operator<<(std::basic\_ostream<\_Elem,\_Traits>\& i, \mbox{\hyperlink{structcolor}{color}}\& c)}
+\DoxyCodeLine{54 \{}
+\DoxyCodeLine{55     HANDLE hStdout=GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{56     SetConsoleTextAttribute(hStdout,c.m\_color);}
+\DoxyCodeLine{57     \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{58 \}}
+
+\end{DoxyCode}

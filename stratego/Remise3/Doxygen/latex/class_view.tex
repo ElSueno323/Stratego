@@ -1,0 +1,129 @@
+\hypertarget{class_view}{}\doxysection{View Class Reference}
+\label{class_view}\index{View@{View}}
+Inheritance diagram for View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_view_ab25f78719c5adaffaf6abea5f600242e}\label{class_view_ab25f78719c5adaffaf6abea5f600242e}} 
+void {\bfseries move\+To\+Put} ()
+\begin{DoxyCompactList}\small\item\em move\+To\+Put when the state of game is spawn , can put entity on the board. When the state of game is turn ,can move entity on the board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a5a6dbdf685916a2b52135ac86af595d0}\label{class_view_a5a6dbdf685916a2b52135ac86af595d0}} 
+void {\bfseries spawn\+Select} ()
+\begin{DoxyCompactList}\small\item\em spawn\+Select select a role for put in game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a5c71c29ad620ff914d69e8674e4ad968}\label{class_view_a5c71c29ad620ff914d69e8674e4ad968}} 
+void {\bfseries begin\+Start} ()
+\begin{DoxyCompactList}\small\item\em begin\+Start start the game for spawn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_ac292fe002f1c4ccff613e65f5d3bf61a}\label{class_view_ac292fe002f1c4ccff613e65f5d3bf61a}} 
+void {\bfseries begin\+Load} ()
+\begin{DoxyCompactList}\small\item\em begin\+Load read a file for create the board for the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_view_a764770e35deaf645699017bbad638d6c}\label{class_view_a764770e35deaf645699017bbad638d6c}} 
+{\bfseries View} (\mbox{\hyperlink{class_game}{Game}} $\ast$g)
+\item 
+\mbox{\Hypertarget{class_view_a4684e5cb232e13c80d86b1c98deb416d}\label{class_view_a4684e5cb232e13c80d86b1c98deb416d}} 
+void {\bfseries display\+Title} ()
+\begin{DoxyCompactList}\small\item\em display\+Title print the title of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_ab138c40e3fc9781eba47042bbce0ab90}\label{class_view_ab138c40e3fc9781eba47042bbce0ab90}} 
+void {\bfseries display\+State} ()
+\begin{DoxyCompactList}\small\item\em display\+State print the state fo the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a8ad17751fdb176335a6377a5b8270719}\label{class_view_a8ad17751fdb176335a6377a5b8270719}} 
+void {\bfseries display\+Board} ()
+\begin{DoxyCompactList}\small\item\em display\+Board print the board of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_ab1a6509cd31cfc30f7430331ba15fdfc}\label{class_view_ab1a6509cd31cfc30f7430331ba15fdfc}} 
+void {\bfseries display\+Winner} ()
+\begin{DoxyCompactList}\small\item\em display\+Winner print the player who win the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_ab62d9efd921bfd679b21cad2aac128da}{display\+Erreur}} (std\+::string m)
+\begin{DoxyCompactList}\small\item\em display\+Erreur print the error who is in the parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a0a3f78acfb78ac1202db691fe1e12c1d}\label{class_view_a0a3f78acfb78ac1202db691fe1e12c1d}} 
+void {\bfseries display\+Turn} ()
+\begin{DoxyCompactList}\small\item\em display\+Turn print the player who is the turn. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_abe38febd15b042aa5833a84201659046}\label{class_view_abe38febd15b042aa5833a84201659046}} 
+void {\bfseries display\+Message} (std\+::string)
+\begin{DoxyCompactList}\small\item\em display\+Message print the message who is in the parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a8dc16e8ad1376456b0b8dcb23fbb69e9}\label{class_view_a8dc16e8ad1376456b0b8dcb23fbb69e9}} 
+void {\bfseries clean} ()
+\begin{DoxyCompactList}\small\item\em clean clean the console. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_view_aadb5627e3824268dc280879642a15929}{ask\+Role}} ()
+\begin{DoxyCompactList}\small\item\em ask\+Role ask to the player a role in string and return it on ROLE. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_position}{Position}} \mbox{\hyperlink{class_view_a170a9d7714b5f2955caef04dc72fe8c1}{ask\+Position}} ()
+\begin{DoxyCompactList}\small\item\em ask\+Position ask to the player a position in string and return it on \mbox{\hyperlink{class_position}{Position}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_view_acf5485263eb92a3182a0f4e63bcc0880}{ask\+Choice}} ()
+\begin{DoxyCompactList}\small\item\em ask\+Choice ask to the player if he wants begin with default map or a custom. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_view_a26ab644c239b2d28f522fe9ac6b4cf82}\label{class_view_a26ab644c239b2d28f522fe9ac6b4cf82}} 
+int {\bfseries ask\+Number} (std\+::string message)
+\item 
+\mbox{\Hypertarget{class_view_a8233a9c6915c3d3c29277ba869e511b9}\label{class_view_a8233a9c6915c3d3c29277ba869e511b9}} 
+{\bfseries View} (\mbox{\hyperlink{class_game}{Game}} $\ast$game, QWidget $\ast$parent=nullptr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_view_acf5485263eb92a3182a0f4e63bcc0880}\label{class_view_acf5485263eb92a3182a0f4e63bcc0880}} 
+\index{View@{View}!askChoice@{askChoice}}
+\index{askChoice@{askChoice}!View@{View}}
+\doxysubsubsection{\texorpdfstring{askChoice()}{askChoice()}}
+{\footnotesize\ttfamily bool View\+::ask\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask\+Choice ask to the player if he wants begin with default map or a custom. 
+
+\begin{DoxyReturn}{Returns}
+a Boolean,true if is O. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_a170a9d7714b5f2955caef04dc72fe8c1}\label{class_view_a170a9d7714b5f2955caef04dc72fe8c1}} 
+\index{View@{View}!askPosition@{askPosition}}
+\index{askPosition@{askPosition}!View@{View}}
+\doxysubsubsection{\texorpdfstring{askPosition()}{askPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_position}{Position}} View\+::ask\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask\+Position ask to the player a position in string and return it on \mbox{\hyperlink{class_position}{Position}}. 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_position}{Position}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_aadb5627e3824268dc280879642a15929}\label{class_view_aadb5627e3824268dc280879642a15929}} 
+\index{View@{View}!askRole@{askRole}}
+\index{askRole@{askRole}!View@{View}}
+\doxysubsubsection{\texorpdfstring{askRole()}{askRole()}}
+{\footnotesize\ttfamily string View\+::ask\+Role (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+ask\+Role ask to the player a role in string and return it on ROLE. 
+
+\begin{DoxyReturn}{Returns}
+a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_view_ab62d9efd921bfd679b21cad2aac128da}\label{class_view_ab62d9efd921bfd679b21cad2aac128da}} 
+\index{View@{View}!displayErreur@{displayErreur}}
+\index{displayErreur@{displayErreur}!View@{View}}
+\doxysubsubsection{\texorpdfstring{displayErreur()}{displayErreur()}}
+{\footnotesize\ttfamily void View\+::display\+Erreur (\begin{DoxyParamCaption}\item[{std\+::string}]{m }\end{DoxyParamCaption})}
+
+
+
+display\+Erreur print the error who is in the parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & a error in string. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/app/view.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/\+Gui/view.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/app/view.\+cpp\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/\+Gui/view.\+cpp\end{DoxyCompactItemize}

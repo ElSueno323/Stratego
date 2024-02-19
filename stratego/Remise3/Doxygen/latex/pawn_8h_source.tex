@@ -1,0 +1,38 @@
+\hypertarget{pawn_8h_source}{}\doxysection{pawn.\+h}
+\label{pawn_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/Gui/pawn.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/Gui/pawn.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PAWN\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PAWN\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QToolButton>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QObject>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Case.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}ROLE.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{class }\mbox{\hyperlink{class_pawn}{Pawn}}: \textcolor{keyword}{public} QToolButton}
+\DoxyCodeLine{12 \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_pawn}{Pawn}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y, \textcolor{keyword}{const} \mbox{\hyperlink{class_case}{Case}} * c, QWidget * parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_pawn_a23de913f0d01f60393c207943a9aacf8}{getX}}()\textcolor{keyword}{const}\{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{return} x\_;}
+\DoxyCodeLine{21     \}}
+\DoxyCodeLine{26     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_pawn_a9d9e25ac70bec09cfc51979a1358a94a}{getY}}()\textcolor{keyword}{const}\{}
+\DoxyCodeLine{27         \textcolor{keywordflow}{return} y\_;}
+\DoxyCodeLine{28     \}}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pawn_a3e7554ce74eb25ba4845d6d9ea4a273e}{changeIcon}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_pawn_a8a4492988b1aad63c1df172627b50778}{updateIcon}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_pawn}{\string~Pawn}}();}
+\DoxyCodeLine{38 \textcolor{keyword}{private}:}
+\DoxyCodeLine{39     QIcon * icon;}
+\DoxyCodeLine{40     \textcolor{keyword}{const} \mbox{\hyperlink{class_case}{Case}} * c;}
+\DoxyCodeLine{41     \textcolor{keywordtype}{int} x\_;}
+\DoxyCodeLine{42     \textcolor{keywordtype}{int} y\_;}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PAWN\_H}}
+
+\end{DoxyCode}

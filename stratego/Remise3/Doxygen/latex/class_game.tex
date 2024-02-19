@@ -1,0 +1,204 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+The \mbox{\hyperlink{class_game}{Game}} class.  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+Inheritance diagram for Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_a2566f1a3347b504ea33cad0b2a33e6c0}{is\+End}} () const
+\begin{DoxyCompactList}\small\item\em is\+End check the end of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_aa2b523b435bf1fe0b3c67cc13654e48a}\label{class_game_aa2b523b435bf1fe0b3c67cc13654e48a}} 
+void {\bfseries turn\+Player} ()
+\begin{DoxyCompactList}\small\item\em turn\+Player change the turn of the current player. Only when the STATE is TURN or SPAWN. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a742082b6d6afd2864408eb07f8885e76}{get\+Current\+Player}} () const
+\begin{DoxyCompactList}\small\item\em get\+Current\+Player return the current player. \end{DoxyCompactList}\item 
+STATE \mbox{\hyperlink{class_game_a745b36ced9c156885a0b725b0d3a1c1a}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em get\+State give the State of the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}\label{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}} 
+void {\bfseries start} ()
+\begin{DoxyCompactList}\small\item\em start the game only when the STATE is MENU. And change the STATE in SPAWN. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_game_ae6e625e2a0e28f3bd46c7773202fd48b}{move\+To}} (\mbox{\hyperlink{class_position}{Position}} from, \mbox{\hyperlink{class_position}{Position}} to)
+\begin{DoxyCompactList}\small\item\em move use the move of board who move entity on a position to a other. Only if the STATE is SPAWN. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_ad835cf555720400f0fa98ef10f67c2cd}{spawn\+End}} (int player)
+\begin{DoxyCompactList}\small\item\em spawn\+End use the spawn\+End of board, and if the spawn of all player is end ,change the STATE in TURN. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a39bb2fd26b5ea6b164f28f9f6723582e}\label{class_game_a39bb2fd26b5ea6b164f28f9f6723582e}} 
+void {\bfseries reset} ()
+\begin{DoxyCompactList}\small\item\em reset the game \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a960f02d075654bab95f5aa164ef31262}\label{class_game_a960f02d075654bab95f5aa164ef31262}} 
+void {\bfseries create\+File\+Map} ()
+\begin{DoxyCompactList}\small\item\em create\+File\+Map \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_game_a0aa0cb18d9e375b6f53771714ddf645e}{put}} (std\+::string r, const \mbox{\hyperlink{class_position}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em put a entity in a certain position (only place to the board) \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_case}{Case}} $\ast$ \mbox{\hyperlink{class_game_aaf80b7363062760b8a1e351db5286a66}{get\+Case}} (\mbox{\hyperlink{class_position}{Position}} pos) const
+\begin{DoxyCompactList}\small\item\em get\+Case use get\+Case of board , give the case at the given position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a61cdccbb35539713123ef2fedd9a795f}{register\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$o) override
+\item 
+void \mbox{\hyperlink{class_game_a0911db50780573fcba1764d8a199ec43}{remove\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} $\ast$o) override
+\item 
+void \mbox{\hyperlink{class_game_a5e619fdd1101905b29ed5923f7145238}{notify\+All\+Observer}} (std\+::string m) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_game}{Game}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_aaf80b7363062760b8a1e351db5286a66}\label{class_game_aaf80b7363062760b8a1e351db5286a66}} 
+\index{Game@{Game}!getCase@{getCase}}
+\index{getCase@{getCase}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCase()}{getCase()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_case}{Case}} $\ast$ Game\+::get\+Case (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption}) const}
+
+
+
+get\+Case use get\+Case of board , give the case at the given position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a \mbox{\hyperlink{class_position}{Position}} of the board to put. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a case of the board. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a742082b6d6afd2864408eb07f8885e76}\label{class_game_a742082b6d6afd2864408eb07f8885e76}} 
+\index{Game@{Game}!getCurrentPlayer@{getCurrentPlayer}}
+\index{getCurrentPlayer@{getCurrentPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrentPlayer()}{getCurrentPlayer()}}
+{\footnotesize\ttfamily int Game\+::get\+Current\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+Current\+Player return the current player. 
+
+\begin{DoxyReturn}{Returns}
+return the current player. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a745b36ced9c156885a0b725b0d3a1c1a}\label{class_game_a745b36ced9c156885a0b725b0d3a1c1a}} 
+\index{Game@{Game}!getState@{getState}}
+\index{getState@{getState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily STATE Game\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+get\+State give the State of the game. 
+
+\begin{DoxyReturn}{Returns}
+a STATE, 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a2566f1a3347b504ea33cad0b2a33e6c0}\label{class_game_a2566f1a3347b504ea33cad0b2a33e6c0}} 
+\index{Game@{Game}!isEnd@{isEnd}}
+\index{isEnd@{isEnd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isEnd()}{isEnd()}}
+{\footnotesize\ttfamily bool Game\+::is\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+is\+End check the end of the game. 
+
+\begin{DoxyReturn}{Returns}
+return true if one flag is catched. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ae6e625e2a0e28f3bd46c7773202fd48b}\label{class_game_ae6e625e2a0e28f3bd46c7773202fd48b}} 
+\index{Game@{Game}!moveTo@{moveTo}}
+\index{moveTo@{moveTo}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{moveTo()}{moveTo()}}
+{\footnotesize\ttfamily char Game\+::move\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{from,  }\item[{\mbox{\hyperlink{class_position}{Position}}}]{to }\end{DoxyParamCaption})}
+
+
+
+move use the move of board who move entity on a position to a other. Only if the STATE is SPAWN. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em from} & a \mbox{\hyperlink{class_position}{Position}} of the entity who want to move. \\
+\hline
+{\em to} & a \mbox{\hyperlink{class_position}{Position}} where the entity arrive at. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a5e619fdd1101905b29ed5923f7145238}\label{class_game_a5e619fdd1101905b29ed5923f7145238}} 
+\index{Game@{Game}!notifyAllObserver@{notifyAllObserver}}
+\index{notifyAllObserver@{notifyAllObserver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{notifyAllObserver()}{notifyAllObserver()}}
+{\footnotesize\ttfamily void Game\+::notify\+All\+Observer (\begin{DoxyParamCaption}\item[{std\+::string}]{m }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_observable}{Observable}}.
+
+\mbox{\Hypertarget{class_game_a0aa0cb18d9e375b6f53771714ddf645e}\label{class_game_a0aa0cb18d9e375b6f53771714ddf645e}} 
+\index{Game@{Game}!put@{put}}
+\index{put@{put}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{put()}{put()}}
+{\footnotesize\ttfamily char Game\+::put (\begin{DoxyParamCaption}\item[{std\+::string}]{r,  }\item[{const \mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+put a entity in a certain position (only place to the board) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & the role of the entity \\
+\hline
+{\em pos} & the position to place the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the entity in put at position, 1 if the entity is already on board 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a61cdccbb35539713123ef2fedd9a795f}\label{class_game_a61cdccbb35539713123ef2fedd9a795f}} 
+\index{Game@{Game}!registerObserver@{registerObserver}}
+\index{registerObserver@{registerObserver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{registerObserver()}{registerObserver()}}
+{\footnotesize\ttfamily void Game\+::register\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_observable}{Observable}}.
+
+\mbox{\Hypertarget{class_game_a0911db50780573fcba1764d8a199ec43}\label{class_game_a0911db50780573fcba1764d8a199ec43}} 
+\index{Game@{Game}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void Game\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} $\ast$}]{o }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_observable}{Observable}}.
+
+\mbox{\Hypertarget{class_game_ad835cf555720400f0fa98ef10f67c2cd}\label{class_game_ad835cf555720400f0fa98ef10f67c2cd}} 
+\index{Game@{Game}!spawnEnd@{spawnEnd}}
+\index{spawnEnd@{spawnEnd}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{spawnEnd()}{spawnEnd()}}
+{\footnotesize\ttfamily bool Game\+::spawn\+End (\begin{DoxyParamCaption}\item[{int}]{player }\end{DoxyParamCaption})}
+
+
+
+spawn\+End use the spawn\+End of board, and if the spawn of all player is end ,change the STATE in TURN. 
+
+\begin{DoxyReturn}{Returns}
+a boolean, true if the STATE as Spawn. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/game.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/game.\+cpp\end{DoxyCompactItemize}

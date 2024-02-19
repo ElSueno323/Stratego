@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/board/border.png</file>
+        <file>images/board/grass1.png</file>
+        <file>images/board/grass2.png</file>
+        <file>images/board/highlight_invalid.png</file>
+        <file>images/board/highlight_none.png</file>
+        <file>images/board/highlight_valid.png</file>
+        <file>images/board/highlight_white.png</file>
+        <file>images/board/lake1_1.png</file>
+        <file>images/board/lake1_2.png</file>
+        <file>images/board/lake1_3.png</file>
+        <file>images/board/lake1_4.png</file>
+        <file>images/board/lake2_1.png</file>
+        <file>images/board/lake2_2.png</file>
+        <file>images/board/lake2_3.png</file>
+        <file>images/board/lake2_4.png</file>
+        <file>images/board/movearrow_blue.png</file>
+        <file>images/board/movearrow_red.png</file>
+        <file>images/board/ready_hover.png</file>
+        <file>images/board/ready_idle.png</file>
+        <file>images/board/setup_panel.png</file>
+        <file>images/board/stratego_logo.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,65 @@
+\hypertarget{game_8h_source}{}\doxysection{game.\+h}
+\label{game_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/game.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef GAME\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define GAME\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}board.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}position.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}STATE.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}observable.h"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{class_game}{Game}}: \mbox{\hyperlink{class_observable}{Observable}}\{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \textcolor{keywordtype}{int} currentPlayer\_;}
+\DoxyCodeLine{16     \mbox{\hyperlink{class_board}{Board}} * board;}
+\DoxyCodeLine{17     STATE state;}
+\DoxyCodeLine{18     std::list<Observer *> lo;}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \mbox{\hyperlink{class_game}{Game}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_a2566f1a3347b504ea33cad0b2a33e6c0}{isEnd}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_aa2b523b435bf1fe0b3c67cc13654e48a}{turnPlayer}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_game_a742082b6d6afd2864408eb07f8885e76}{getCurrentPlayer}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{42     STATE \mbox{\hyperlink{class_game_a745b36ced9c156885a0b725b0d3a1c1a}{getState}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a3d9b98f7c4a96ecf578f75b96c9f0e90}{start}}();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{54     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_game_ae6e625e2a0e28f3bd46c7773202fd48b}{moveTo}}(\mbox{\hyperlink{class_position}{Position}} from, \mbox{\hyperlink{class_position}{Position}} to);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_game_ad835cf555720400f0fa98ef10f67c2cd}{spawnEnd}}(\textcolor{keywordtype}{int} player);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a39bb2fd26b5ea6b164f28f9f6723582e}{reset}}();}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_game_a960f02d075654bab95f5aa164ef31262}{createFileMap}}();}
+\DoxyCodeLine{76     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_game_a0aa0cb18d9e375b6f53771714ddf645e}{put}}(std::string r,\textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} pos);}
+\DoxyCodeLine{82     \textcolor{keyword}{const} \mbox{\hyperlink{class_case}{Case}} * \mbox{\hyperlink{class_game_aaf80b7363062760b8a1e351db5286a66}{getCase}}(\mbox{\hyperlink{class_position}{Position}} pos) \textcolor{keyword}{const};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84     \textcolor{keywordtype}{void} registerObserver(\mbox{\hyperlink{class_observer}{Observer}} * o)\textcolor{keyword}{ override}}
+\DoxyCodeLine{85 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{86         lo.push\_back(o);}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89     \textcolor{keywordtype}{void} removeObserver(\mbox{\hyperlink{class_observer}{Observer}} * o)\textcolor{keyword}{ override}}
+\DoxyCodeLine{90 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{91         lo.remove(o);}
+\DoxyCodeLine{92     \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94     \textcolor{keywordtype}{void} notifyAllObserver(std::string m)\textcolor{keyword}{ override}}
+\DoxyCodeLine{95 \textcolor{keyword}{    }\{}
+\DoxyCodeLine{96         \textcolor{keywordflow}{for}(\mbox{\hyperlink{class_observer}{Observer}} * o: lo)}
+\DoxyCodeLine{97         \{}
+\DoxyCodeLine{98             o-\/>update(m);}
+\DoxyCodeLine{99         \}}
+\DoxyCodeLine{100     \}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102     \mbox{\hyperlink{class_game}{\string~Game}}();}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105 \};}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// GAME\_H}}
+
+\end{DoxyCode}

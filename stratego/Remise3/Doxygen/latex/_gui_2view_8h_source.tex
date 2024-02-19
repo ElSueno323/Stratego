@@ -1,0 +1,63 @@
+\hypertarget{_gui_2view_8h_source}{}\doxysection{view.\+h}
+\label{_gui_2view_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/Gui/view.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/Gui/view.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef VIEW\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define VIEW\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}game.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}pawn.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QVBoxLayout>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <QGridLayout>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <QPushButton>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <QLabel>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <QWidget>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <QHBoxLayout>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_view}{View}}: \textcolor{keyword}{public} QWidget, \textcolor{keyword}{public} \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{16 \{}
+\DoxyCodeLine{17     Q\_OBJECT}
+\DoxyCodeLine{18 \textcolor{keyword}{public}:}
+\DoxyCodeLine{19     \mbox{\hyperlink{class_view}{View}}(\mbox{\hyperlink{class_game}{Game}} * game, QWidget * parent = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_view}{\string~View}}();}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{28     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_ab25f78719c5adaffaf6abea5f600242e}{moveToPut}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_a5a6dbdf685916a2b52135ac86af595d0}{spawnSelect}}();}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_a5c71c29ad620ff914d69e8674e4ad968}{beginStart}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_view_ac292fe002f1c4ccff613e65f5d3bf61a}{beginLoad}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keyword}{private}:}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} initView();}
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} initRightSide();}
+\DoxyCodeLine{56     \textcolor{keywordtype}{void} update(std::string m) \textcolor{keyword}{override};}
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} display();}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} createFileMap();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{69     \mbox{\hyperlink{class_game}{Game}} * game;}
+\DoxyCodeLine{73     QVBoxLayout * window;}
+\DoxyCodeLine{77     QHBoxLayout * hbox;}
+\DoxyCodeLine{81     QGridLayout * grid;}
+\DoxyCodeLine{85     QGridLayout * rightSide;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{90     QHBoxLayout * config;}
+\DoxyCodeLine{94     QList <Pawn * > data\_list;}
+\DoxyCodeLine{98     QLabel * state;}
+\DoxyCodeLine{102     QHBoxLayout * buttons;}
+\DoxyCodeLine{106     QPushButton * start;}
+\DoxyCodeLine{110     QPushButton * load;}
+\DoxyCodeLine{114     QString * roleSpawn;}
+\DoxyCodeLine{118     \mbox{\hyperlink{class_position}{Position}} * from;}
+\DoxyCodeLine{122     \mbox{\hyperlink{class_position}{Position}} * to;}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{127     \textcolor{keywordtype}{bool} take;}
+\DoxyCodeLine{128     \textcolor{keywordtype}{bool} loaded;}
+\DoxyCodeLine{129 \};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// VIEW\_H}}
+
+\end{DoxyCode}

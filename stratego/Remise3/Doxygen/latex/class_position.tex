@@ -1,0 +1,121 @@
+\hypertarget{class_position}{}\doxysection{Position Class Reference}
+\label{class_position}\index{Position@{Position}}
+
+
+The \mbox{\hyperlink{class_position}{Position}} class.  
+
+
+
+
+{\ttfamily \#include $<$position.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_position_a6e36cf0fee251e74cfedb86f4e99558d}{Position}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em main constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_position_a369a577425f8ba02e8750d04b6a088db}\label{class_position_a369a577425f8ba02e8750d04b6a088db}} 
+{\bfseries Position} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_position}{Position}} set to (0;0). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_position_a93f3502e63b37514f0542bc3972affcc}{operator==}} (const \mbox{\hyperlink{class_position}{Position}} \&p)
+\begin{DoxyCompactList}\small\item\em compare two position. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_position_aec07bdc14874f47cd1dc675d864f49a2}{getX}} () const
+\begin{DoxyCompactList}\small\item\em getX give the value of x. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_position_aecedcf0af53e559ccde18432f20d1a37}{getY}} () const
+\begin{DoxyCompactList}\small\item\em getY give the value of y. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_position_a53a280cf3f509941f4b8f72975dca845}{neighboor}} (const \mbox{\hyperlink{class_position}{Position}} \&o) const
+\begin{DoxyCompactList}\small\item\em neighboor check if the select position is around it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{class_position}{Position}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_position_a6e36cf0fee251e74cfedb86f4e99558d}\label{class_position_a6e36cf0fee251e74cfedb86f4e99558d}} 
+\index{Position@{Position}!Position@{Position}}
+\index{Position@{Position}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}}
+{\footnotesize\ttfamily Position\+::\+Position (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+main constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & the x position. \\
+\hline
+{\em y} & the y position. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_position_aec07bdc14874f47cd1dc675d864f49a2}\label{class_position_aec07bdc14874f47cd1dc675d864f49a2}} 
+\index{Position@{Position}!getX@{getX}}
+\index{getX@{getX}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily int Position\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getX give the value of x. 
+
+\begin{DoxyReturn}{Returns}
+a constante integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_position_aecedcf0af53e559ccde18432f20d1a37}\label{class_position_aecedcf0af53e559ccde18432f20d1a37}} 
+\index{Position@{Position}!getY@{getY}}
+\index{getY@{getY}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily int Position\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+getY give the value of y. 
+
+\begin{DoxyReturn}{Returns}
+a constante integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_position_a53a280cf3f509941f4b8f72975dca845}\label{class_position_a53a280cf3f509941f4b8f72975dca845}} 
+\index{Position@{Position}!neighboor@{neighboor}}
+\index{neighboor@{neighboor}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{neighboor()}{neighboor()}}
+{\footnotesize\ttfamily bool Position\+::neighboor (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{o }\end{DoxyParamCaption}) const}
+
+
+
+neighboor check if the select position is around it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o} & a position which will be verified. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a boolean, true if the position is around it. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_position_a93f3502e63b37514f0542bc3972affcc}\label{class_position_a93f3502e63b37514f0542bc3972affcc}} 
+\index{Position@{Position}!operator==@{operator==}}
+\index{operator==@{operator==}!Position@{Position}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Position\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_position}{Position}} \&}]{p }\end{DoxyParamCaption})}
+
+
+
+compare two position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the other postion to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the both position are in same place. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/position.\+h\item 
+D\+:/se dev java/bloc2/dev4/new/dev4-\/stratego/\+Stratego/metier/position.\+cpp\end{DoxyCompactItemize}

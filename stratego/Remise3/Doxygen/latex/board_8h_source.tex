@@ -1,0 +1,51 @@
+\hypertarget{board_8h_source}{}\doxysection{board.\+h}
+\label{board_8h_source}\index{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/board.h@{D:/se dev java/bloc2/dev4/new/dev4-\/stratego/Stratego/metier/board.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef BOARD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define BOARD\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}case.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}position.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_board}{Board}}}
+\DoxyCodeLine{15 \{}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{class_case}{Case}} cases\_[10][10];}
+\DoxyCodeLine{18     std::vector<Entity> p1l\_;}
+\DoxyCodeLine{19     std::vector<Entity> p2l\_;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{bool} end;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 public :}
+\DoxyCodeLine{26     \mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}}();}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{34     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_board_a407d50b7292b1d8202d9c89d030c0be2}{move}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} \& from, \textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} \& to,\textcolor{keyword}{const} \textcolor{keywordtype}{int} \& currentPlayer);}
+\DoxyCodeLine{39     std::vector<Entity> \mbox{\hyperlink{class_board_a6eaea6fdedb076ba47c41cb6a8512dc2}{getP1l}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{44     std::vector<Entity> \mbox{\hyperlink{class_board_a69f02479aefefbcb84cc83803a4dc9db}{getP2l}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_case}{Case}} \mbox{\hyperlink{class_board_a2b9bb21f89e425cf748b65bafec20284}{getArCases}}(\mbox{\hyperlink{class_position}{Position}} pos) \textcolor{keyword}{const};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{56     \textcolor{keyword}{const} \mbox{\hyperlink{class_case}{Case}} * \mbox{\hyperlink{class_board_a7c85f33af41252911bad542d0fe15ddb}{getCase}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} \& pos) \textcolor{keyword}{const};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a2e60ce700f8ec3fb239ff19fc49873cf}{destroy}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} \& pos, \textcolor{keyword}{const} \textcolor{keywordtype}{int} \& cur);}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{69     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_board_a3b303d3c1657b5a7e99827b1452c101f}{isEnd}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{74     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_board_ac8b920727b191f22a32a8598bacade37}{emptyBoard}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{81     \textcolor{keywordtype}{char} \mbox{\hyperlink{class_board_ad6a3662a95e8eeb017b0f9e4f08dc353}{put}}(\mbox{\hyperlink{class_entity}{Entity}} * en, \textcolor{keyword}{const} \mbox{\hyperlink{class_position}{Position}} \& pos);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{90     \mbox{\hyperlink{class_entity}{Entity}} * \mbox{\hyperlink{class_board_a671ab24d844dbb2f700e9ca96ca5d0dc}{giveEntityPlayer}}(\textcolor{keyword}{const} \textcolor{keywordtype}{int} \& ower,ROLE \& r);}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_board_a8d3e439d286f8df91715c8a83ab86c71}{spawnEnd}}(\textcolor{keywordtype}{int} player) \textcolor{keyword}{const};}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{keyword}{private}:}
+\DoxyCodeLine{107     \textcolor{keywordtype}{bool} checkDash(\mbox{\hyperlink{class_position}{Position}} from,\mbox{\hyperlink{class_position}{Position}} to)\textcolor{keyword}{const};}
+\DoxyCodeLine{108 \};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// BOARD\_H}}
+
+\end{DoxyCode}
